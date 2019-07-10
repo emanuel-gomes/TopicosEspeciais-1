@@ -17,8 +17,14 @@ def getAlunos():
 @app.route("/alunos/<int:id>", methods=['GET'])
 def getAlunosByID(id):
     pass
+@app.route("/alunos/<int:id>", methods=['POST'])
+def setAlunos():
+    print('Cadastrando o aluno')
+    return print('cadastrado com sucesso!', 200)
+@app.route("/cursos", methods=['GET'])
 def getCursos():
     pass
+@app.route("/cursos<id:int>", methods=['GET'])
 def getCursosByID():
     pass
 def getTurmas():
