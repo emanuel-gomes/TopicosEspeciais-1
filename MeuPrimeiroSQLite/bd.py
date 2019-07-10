@@ -6,7 +6,13 @@ conn = sqlite3.connect('estudantes.db')
 cursor = conn.cursor()
 
 cursor.execute("""
-    SELECT * FROM tb_estudantes
+    CREATE TABLE tb_estudante (
+    id integer NOT NULL PRIMARY KEY AUTOINCREMENT,
+    nome VARCHAR(30) NOT NULL,
+    endereco TEXT NOT NULL,
+    nascimento DATE NOT NULL,
+    matricula VARCHAR(12)
+    );
 """)
 
 print("Tabela Criada com Sucesso!")
