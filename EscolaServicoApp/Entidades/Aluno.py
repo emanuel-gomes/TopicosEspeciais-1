@@ -5,3 +5,4 @@ class Aluno():
         self.matricula = matricula
         self.cpf = cpf
         self.nascimento = nascimento
+        
